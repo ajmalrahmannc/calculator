@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./calculator.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div class="frame">
+        <h1>CALCULATOR</h1>
+        <div class="border">
+            <input type="text" name="text" id="result">
+            <div class="keypad">
+                <div class="first_raw">
+                    <button onclick="clearBox()" class="cbtn">C</button>
+                    <button onclick="deleteNum()" class="delbtn">DEL</button>
+                    <button onclick="displayNum('/')">/</button>
+                </div>
+
+                <div class="secound_raw">
+                    <button onclick="displayNum('7')">7</button>
+                    <button onclick="displayNum('8')">8</button>
+                    <button onclick="displayNum('9')">9</button>
+                    <button onclick="displayNum('*')">*</button>
+                </div>
+
+                <div class="third_raw">
+                    <button onclick="displayNum('4')">4</button>
+                    <button onclick="displayNum('5')">5</button>
+                    <button onclick="displayNum('6')">6</button>
+                    <button onclick="displayNum('-')">-</button>
+                </div>
+
+                <div class="forth_raw">
+                    <button onclick="displayNum('1')">1</button>
+                    <button onclick="displayNum('2')">2</button>
+                    <button onclick="displayNum('3')">3</button>
+                    <button onclick="displayNum('+')">+</button>
+                </div>
+
+                <div class="fifth_raw">
+                    <button onclick="displayNum('0')" class="zerobtn">0</button>
+                    <button onclick="displayNum('.')">.</button>
+                    <button onclick="evaluateExpression()">=</button>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>
